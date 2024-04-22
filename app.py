@@ -1,6 +1,7 @@
 import asyncio
 from flask import Flask, request, jsonify
-from tera import terabox
+from teraa import terabox
+from server import teraBoxDl
 
 app = Flask(__name__)
 
@@ -25,6 +26,15 @@ async def terabox_api():
 
     response_data = await get_terabox_data_async(url)
     return jsonify(response_data)
+
+@app.route('/api/dw', methods=['GET'])
+async def get_download_link():
+    data = request.args.get('data')
+    if not data:
+        return {"error": "Data parameter is missing"}, 400
+
+    download_link = await teraBoxDl(data)
+    return {"download_link": download_link}
 
 if __name__ == '__main__':
     app.run(debug=True)
