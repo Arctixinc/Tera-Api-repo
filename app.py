@@ -1,6 +1,6 @@
 import asyncio
 from flask import Flask, request, jsonify
-from teraa import terabox
+from tera import terabox
 from server import teraBoxDl
 
 app = Flask(__name__)
