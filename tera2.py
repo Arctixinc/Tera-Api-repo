@@ -1,3 +1,4 @@
+import requests
 import os
 import asyncio
 from urllib.parse import urlparse, parse_qs
