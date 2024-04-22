@@ -5,7 +5,16 @@
   "buildpacks": [
     {
       "url": "heroku/python"
+    },
+    {
+      "url": "https://github.com/zibdie/heroku-buildpack-firefox-geckodriver"
     }
   ],
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "standard-1x"
+    }
+  },
   "stack": "heroku-22"
 }
