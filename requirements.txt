@@ -1,4 +1,4 @@
-requets
+requests
 selenium
 flask[async]
 aiofiles
