@@ -1,0 +1,11 @@
+{
+  "name": "TeraBox Api",
+  "description": "Terabox Api",
+  "repository": "https://github.com/Arctixinc/Tera-Api-repo",
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "stack": "heroku-22"
+}
