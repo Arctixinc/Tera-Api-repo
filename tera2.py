@@ -108,7 +108,7 @@ async def get_data(url: str):
     direct_link = response.headers.get("location")
     data = {
         "file_name": r_j["list"][0]["server_filename"],
-        "direct_link": direct_link,
+        "direct_link": direct_link.replace('https://d3.terabox.app', 'https://d8.freeterabox.com'),
         "thumb": r_j["list"][0]["thumbs"]["url3"].replace("data.terabox.app", "d3.terabox.app"),
         "size": get_formatted_size(int(r_j["list"][0]["size"])),
     }
