@@ -5,7 +5,7 @@ from urllib.parse import urlparse, parse_qs
 from typing import Optional
 
 
-COOKIE = """csrfToken=CtaTyhN71o6m4SbIqaVD60Ei; browserid=dq1iAgZuV4yKXm06ZyuiuRLj84QjU2o4jlUbJuUIQ37peQYzEwtj1q_4T0o=; lang=en; TSID=b8RtRDpicYQCQEJmwyybbBj4GJnShdab; __bid_n=18ef9ee1ec765517634207; _ga=GA1.1.1991953586.1713760087; g_state={"i_l":0}; ndus=YdDqqKxteHui7gHufHe82l0exhUaKFWTx2MHwKmo; ndut_fmt=6D981AFF47C5BC72E6D5102E07B7B9F133E821FB36E915B51E5F6A016E7F5D20; _ga_06ZNKL8C2E=GS1.1.1713760086.1.1.1713761677.18.0.0"""
+COOKIE = """csrfToken=q18O5aIk_SiKb5MzjfVXayx0; browserid=R5w6xd3x3JYQ3UK9rvcQ6_8DTzeVcjG-LqSsAtvAoZRYNj-C-0jiIeH1s=; lang=en; bid_n=18f6c0745c17f8f7ae4207; _ga=GA1.1.834669620.1715504373; g_state={"i_l":0}; ndus=YfVURCyteHuiLa-mHTQ61D3wvw08a2KCKNEdqKgY; TSID=6BDhcYeJm6gCwI5EJxY2bAz7uhZHUbd3; ab_ymg_result={"data":"50842c6b7cc2ae966a3c4cd0cc4ef519e391b40f2c6b662f00f5c72d67ff6a67cbb859d73ee18285a31556e8e35d5b93b33cc55bd9d795780d1920040a39a2d8a57997bbb19b84e8d9bbffaaf1243160849959eaaf2b08142f1dde43d753b1d32a34ef6095bff282ec4d8ba0feceedc84f53d0860c525a9117466e78eb7f9d5f","key_id":"66","sign":"360ee784"}; ndut_fmt=9B88EC9E4206635FED27B984DF21237B4DFCD031D6D8958E4EFB7A7165017D59; ab_sr=1.0.1_ODBkYTdhMjMyNjdjZDA4ZTk1MGZjYWUwZTIyZjdiYjMxM2Y4N2NhMDcxYzQ4OTUyNTNiYTRmNWQyMGUzOWFiOWNkMDIxYmE3MjEyNjA3Nzg0YjVlZDJiMjMwYjZhMjU3Yzg2ZmU5YzFlMWNlZmI3OTc2YzEyOTIwOWUxMjgzMjc0OWViY2RmYjc3MjZiN2Q3ODNmYmZkNTdjMDYzNjBiMA==; _ga_06ZNKL8C2E=GS1.1.1715504373.1.1.1715504886.50.0.0"""
 
 def find_between(data: str, first: str, last: str) -> Optional[str]:
     try:
